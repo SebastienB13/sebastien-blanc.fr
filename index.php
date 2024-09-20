@@ -37,8 +37,10 @@
 
     <link rel="manifest" href="manifest.json">
 
-    <link rel="stylesheet" href="style.css">
-    <script src="./public/content/assets/js/main.js"></script>
+    <link rel="stylesheet" href="./public/content/assets/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="./public/content/assets/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/content/assets/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="./public/content/asset/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
     <title>Accueil - Sébastien BLANC</title>
 </head>
