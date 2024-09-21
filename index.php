@@ -1,11 +1,11 @@
 <?php
-if (isset($_POST['HomeButton'])) {
+if (isset($_POST['HomeButton']))
     echo "Vous allez être redirigé vers la page d'accueil !";
     header("Location: https://sebastien-blanc.fr/");
     exit();
 ?>
 <?php
-if (isset($_POST['AboutUsButton'])) {
+if (isset($_POST['AboutUsButton']))
     echo "Vous allez être redirigé vers la page Qui Suis-Je";
     header("Location: https://sebastien-blanc.fr/a-propos");
     exit();
@@ -101,8 +101,8 @@ if (isset($_POST['AboutUsButton'])) {
     <div class="presentation-img">
       <img class="rounded" src="" alt="">
     </div>
-    <div class="presentation-title"></div>
-    <div class="presentation-body"></div>
+    <div class="presentation-title">A Propos de Moi</div>
+    <div class="presentation-body">Je m'appelle Sébastien BLANC, j'ai 20 ans.<br>Habitant à Marseille, mon rêve depuis petit est de devenir Marin-Pompier de Marseille,<br>en grandissant j'ai trouvé une nouvelle voie, toujours devenir Marin-Pompier, mais être Officier Marin-Pompier.<br>Avant sa je souhaitait une première expérience, c'est pour cela que début Août 2024 m'est venu l'idée d'effectuer mon recrutement dans l'Armée de Terre en spécialité <b>Équipier Sécurité Civile</b><br>Cette première expérience me permettra de savoir si je suis vraiment fait pour être dans les forces armées !</div>
   </div>
   <div class="professionnal-presentation">
 
