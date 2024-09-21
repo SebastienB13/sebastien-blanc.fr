@@ -7,7 +7,7 @@ if (isset($_POST['HomeButton'])) {
 <?php
 if (isset($_POST['AboutUsButton'])) {
     echo "Vous allez être redirigé vers la page Qui Suis-Je";
-    header("Location: https://sebastien-blanc.fr/qui-suis-je");
+    header("Location: https://sebastien-blanc.fr/a-propos");
     exit();
 ?>
 <!DOCTYPE html>
@@ -59,11 +59,14 @@ if (isset($_POST['AboutUsButton'])) {
     <title>Accueil - Sébastien BLANC</title>
 </head>
 <body>
+<!-- [:s] Navbar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
+    <!-- [:s] Navbar brand img -->
     <form method="POST" class="navbar-brand">
-        <button class="nav-link active bg-body-secondary" type="button" name="HomeButton" aria-current="page"><i class="bi bi-house-fill"></i>&nbsp Accueil</button>
+      <img src="" alt="" name="HomButton">
     </form>
+    <!-- [:e] End Navbar brand img -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -80,11 +83,41 @@ if (isset($_POST['AboutUsButton'])) {
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+        <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
       </form>
     </div>
   </div>
 </nav>
+<!-- [:e] Navbar -->
+
+<div class="container">
+  <div class="background-img"></div>
+  <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+    <p class="text-center fs-2 fw-bolder" id="text-name">Sébastien BLANC</p>
+    <p class="text-center fs-3 fw-bolder" id="text-post">En recherche d'emploi</p>
+  </div>
+  <div class="presentation">
+    <div class="presentation-img">
+      <img class="rounded" src="" alt="">
+    </div>
+    <div class="presentation-title"></div>
+    <div class="presentation-body"></div>
+  </div>
+  <div class="professionnal-presentation">
+
+  </div>
+</div>
+
+<div class="footer fixed-bottom">
+  <div class="links">
+    <form method="POST" class="d-flex">
+      <button class="" type="button" name="CVButton"><i class="bi bi-file-earmark-arrow-down"></i>&nbsp Mon CV</button>
+    </form>
+    <form method="POST" class="d-flex">
+      <button class="" type="button" name="ContactButton"><i class="bi bi-envelope-at"></i>&nbsp Me Contacter</button>
+    </form>
+  </div>
+</div>
 </body>
 </html>
